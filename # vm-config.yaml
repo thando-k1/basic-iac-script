@@ -1,0 +1,16 @@
+# vm-config.yaml
+virtual_machine:
+  name: myTestVM
+  location: eastus
+  size: Standard_B1s
+  os: UbuntuLTS
+  network_interface:
+    name: myNIC
+    ip_configuration:
+      name: myIPConfig
+      private_ip_allocation: Dynamic
+      public_ip: Enabled
+storage_account:
+  name: mystorageaccount123
+  location: eastus
+  sku: Standard_LRS
